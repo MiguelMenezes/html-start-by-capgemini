@@ -9,12 +9,11 @@
 <body>
 	
 	<header>
-		<h1>
-			Currículo de Estudos
-			<span>
-				Miguel Menezes Antunes
-			</span>
-		</h1>
+		<span>
+			<h1>
+				Currículo de Estudos Miguel Menezes Antunes
+			</h1>
+		</span>
 		
 		<nav>
 			
@@ -120,6 +119,52 @@
 				<li>Vedapack Embalagens</li>
 			</ul>
 		</nav>
+	</aside>
+	
+	<aside>
+		<table border=1> <!-- Não utilizar nenhum estilo no HTML, aqui só foi utilizado para demonstrar as mesclagens da tabela -->
+			<caption><h4>Horário de estudos</h4></caption>
+			
+			<thead>
+				<th>Dias da semana</th>
+				<th>Seg</th>
+				<th>Ter</th>
+				<th>Qua</th>
+				<th>Qui</th>
+				<th>Sex</th>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Manhã</td>
+					<td rowspan="2">HTML</td>  <!-- A tag rowspan mescla as linhas. 2 é o atributo para mesclar 2 linhas. -->
+					<td rowspan="2">CSS</td>
+					<td>HTML</td>
+					<td>CSS</td>
+					<td>Javascript</td>
+				</tr>
+				<tr>
+					<td>Tarde</td>
+				<!--<td>HTML</td>   Foi utilizado o rowspan-->
+				<!--<td>CSS</td>    Foi utilizado o rowspan-->
+					<td colspan="3">Javascript</td> <!-- A tag colspan mescla as colunas. 3 é o atributo para mesclar 3 colunas. -->
+				<!--<td>Javascript</td>    Foi utilizado o colspan-->
+				<!--<td>Javascript</td>    Foi utilizado o colspan-->
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<th></th>
+					<th>Foco HTML</th>
+					<th>Foco CSS</th>
+					<th>HTML + JS</th>
+					<th>CSS + JS</th>
+					<th>Foco JS</th>
+				</tr>
+			</tfoot>
+		
+		</table>
 	</aside>
 	
 	<footer>
